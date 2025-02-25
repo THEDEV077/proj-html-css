@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="contener">
+        <nav>
+            <div class="left">
+                <a href="/pomodoro/">Pomodoro</a>
+            </div>
+            <div class="right">
+                <button>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="navspan">Report</span>
+                </button>
+                <button>
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="navspan">Setting</span>
+                </button>
+                <button>
+                    <i class="fa-solid fa-user"></i>
+                    <span class="navspan">Sign In</span>
+                </button>
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <hr >
+        <div class="timerbar">
+            <div class="section-container">
+                <button id="focus" class="btn btn-timer btn-focus">Focus</button>
+                <button id="shortbreak" class="btn btn-shortbreak">Short Break</button>
+                <button id="longbreak" class="btn btn-longbreak">Long Break</button>
+              </div>
+              <div class="time-btn-container">
+                <span id="time"></span>
+                <div class="btn-container">
+                  <button id="btn-start" class="show">Start</button>
+                  <button id="btn-pause" class="hide">Pause</button>
+                  <button id="btn-reset" class="hide">
+                    <i class="fa-solid fa-rotate-right"></i>
+                  </button>
+                </div>
+              </div>
+        </div>
+        <div class="to_do_list">
+            <h2>Tasks</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="add your text">
+                <button>Add</button>
+            </div>
+            <ul id="list-cont">
+                
+            </ul>
+
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
